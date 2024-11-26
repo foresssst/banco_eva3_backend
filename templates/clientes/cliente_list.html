@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Clientes</title>
+</head>
+<body>
+    <h1>Clientes</h1>
+    <a href="{% url 'cliente-create' %}">Añadir Cliente</a>
+    <a href="{% url 'cliente-stats' %}">Ver Estadísticas</a>
+    <ul>
+        {% for cliente in object_list %}
+        <li>
+            {{ cliente.cliente_id }} - {{ cliente.edad }} años
+            <a href="{% url 'cliente-update' cliente.pk %}">Editar</a>
+            <a href="{% url 'cliente-delete' cliente.pk %}">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

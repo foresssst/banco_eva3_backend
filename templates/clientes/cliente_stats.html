@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estadísticas de Clientes</title>
+</head>
+<body>
+    <h1>Estadísticas de Clientes</h1>
+    <p><strong>Total de Clientes:</strong> {{ total_clientes }}</p>
+    <p><strong>Saldo Promedio:</strong> ${{ promedio_saldo|floatformat:2 }}</p>
+    <p><strong>Promedio de Nivel de Satisfacción:</strong> {{ promedio_satisfaccion|floatformat:2 }}</p>
+
+    <h2>Distribución de Edades</h2>
+    <ul>
+        {% for edad in distribucion_edades %}
+            <li>{{ edad.edad }} años: {{ edad.total }} cliente(s)</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Proporción de Géneros</h2>
+    <ul>
+        {% for genero in proporcion_generos %}
+            <li>{{ genero.genero }}: {{ genero.total }} cliente(s)</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'cliente-list' %}">Volver al listado</a>
+</body>
+</html>
