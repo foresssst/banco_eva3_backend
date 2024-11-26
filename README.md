@@ -1,17 +1,6 @@
 
 # Proyecto de Gestión y Análisis de Clientes Bancarios
 
-## 1. Introducción
-
-**Descripción:**
-Este proyecto implementa un sistema para analizar y gestionar datos de clientes bancarios. Incluye:
-- Backend construido con **Django REST Framework**.
-- Frontend creado con **React** para la visualización de estadísticas.
-- Procesos de limpieza y carga de datos en un modelo de Django desde un archivo CSV.
-
-**Objetivo:**
-Permitir la limpieza, análisis y gestión de datos mediante una API y una interfaz de usuario.
-
 **Requisitos Previos:**
 - Python 3.8+
 - Node.js 14+
@@ -19,7 +8,7 @@ Permitir la limpieza, análisis y gestión de datos mediante una API y una inter
 
 ---
 
-## 2. Estructura del Proyecto
+## Estructura del Proyecto
 
 ### **Estructura Principal**
 ```
@@ -42,7 +31,7 @@ Permitir la limpieza, análisis y gestión de datos mediante una API y una inter
 
 ---
 
-## 3. Backend
+## Backend
 
 ### **Modelo de Datos**
 El modelo `Cliente` representa los datos del CSV con campos:
@@ -59,13 +48,13 @@ El modelo `Cliente` representa los datos del CSV con campos:
 - **`/clientes/stats/`**: Estadísticas de clientes.
 
 ### **Limpieza de Datos**
-El script `clean_csv_script.py` automatiza la limpieza del archivo CSV:
+El script `limpiar.py` automatiza la limpieza del archivo CSV:
 - Elimina duplicados.
 - Maneja valores nulos.
 - Guarda un archivo limpio para cargarlo en la base de datos.
 
 ### **Carga de Datos**
-El comando de Django `cargar_clientes_limpios` elimina los datos previos y carga el CSV limpio en la base de datos.
+El comando de Django `cargar_clientes` elimina los datos previos y carga el CSV limpio en la base de datos.
 
 ---
 
