@@ -13,9 +13,9 @@ Este proyecto implementa un sistema para analizar y gestionar datos de clientes 
 Permitir la limpieza, análisis y gestión de datos mediante una API y una interfaz de usuario.
 
 **Requisitos Previos:**
-- Python 3.8+.
-- Node.js 14+.
-- PostgreSQL o SQLite (opcional, según configuración).
+- Python 3.8+
+- Node.js 14+
+- SQLite
 
 ---
 
@@ -136,10 +136,6 @@ El comando de Django `cargar_clientes_limpios` elimina los datos previos y carga
 - Consultar estadísticas en `/clientes/stats/` desde el frontend.
 
 ---
-
-## 7. Conclusión
-
-Este proyecto combina herramientas modernas para procesar y analizar datos. Las mejoras incluyen un diseño más atractivo en el frontend y scripts automatizados para la limpieza de datos.
 
 **Próximos pasos:**
 - Implementar autenticación en la API.
