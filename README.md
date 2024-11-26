@@ -136,7 +136,3 @@ El comando de Django `cargar_clientes_limpios` elimina los datos previos y carga
 - Consultar estadísticas en `/clientes/stats/` desde el frontend.
 
 ---
-
-**Próximos pasos:**
-- Implementar autenticación en la API.
-- Incluir gráficos avanzados para análisis en el frontend.
